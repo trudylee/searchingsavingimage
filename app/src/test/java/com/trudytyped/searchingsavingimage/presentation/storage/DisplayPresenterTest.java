@@ -19,7 +19,7 @@ public class DisplayPresenterTest {
     @Mock DatabaseManager databaseManager;
 
     @Test
-    public void 이미지를_불러온다() {
+    public void 저장된_이미지를_불러오기위해_어댑터를_갱신한다() {
         DisplayContract.Presenter presenter = new DisplayPresenter(view, displayAdapter, databaseManager);
         presenter.initImage();
 
